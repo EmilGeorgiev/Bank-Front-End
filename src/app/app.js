@@ -1,8 +1,8 @@
-angular.module( 'ngBoilerplate', [
+angular.module( 'internetBank', [
   'templates-app',
   'templates-common',
-  'ngBoilerplate.home',
-  'ngBoilerplate.about',
+  'internetBank.home',
+  'internetBank.myProfile',
   'ui.router'
 ])
 

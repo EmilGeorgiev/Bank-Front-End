@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="ngBoilerplate" ng-controller="AppCtrl">
+<html ng-app="InternetBank" ng-controller="AppCtrl">
   <head>
     <title ng-bind="pageTitle"></title>
 
@@ -43,47 +43,47 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <div class="navbar-brand">
-            ngbp
-            <small>
-              <a href="http://github.com/ngbp/ngbp/blob/v<%= version %>-release/CHANGELOG.md">
-                v<%= version %>
-              </a>
-            </small>
-          </div>
+          <!--<div class="navbar-brand">-->
+            <!--ngbp-->
+            <!--<small>-->
+              <!--<a href="http://github.com/ngbp/ngbp/blob/v<%= version %>-release/CHANGELOG.md">-->
+                <!--v<%= version %>-->
+              <!--</a>-->
+            <!--</small>-->
+          <!--</div>-->
         </div>
         <div class="collapse navbar-collapse" collapse="menuCollapsed">
           <ul class="nav navbar-nav">
             <li ui-sref-active="active">
-              <a href ui-sref="home">
+              <a class="btn btn-default" href ui-sref="home">
                 <i class="fa fa-home"></i>
                 Home
               </a>
             </li>
             <li ui-sref-active="active">
-              <a href ui-sref="about">
+              <a class="btn btn-default" href ui-sref="deposit">
                 <i class="fa fa-info-circle"></i>
-                What is it?
+                Deposit
               </a>
             </li>
-            <li>
-              <a href="https://github.com/ngbp/ngbp#readme">
+            <li ui-sref-active="active">
+              <a class="btn btn-default" href ui-sref="withdraw">
                 <i class="fa fa-book"></i>
-                Read the Docs
+                Withdraw
               </a>
             </li>
-            <li>
-              <a href="https://github.com/ngbp/ngbp">
+            <li ui-sref-active="active">
+              <a class="btn btn-default" href ui-sref="myprofile">
                 <i class="fa fa-github-alt"></i>
-                Github
+                My Profile
               </a>
             </li>
             <li>
-              <a href="https://github.com/ngbp/ngbp/issues">
-                <i class="fa fa-comments"></i>
-                Support
-              </a>
+                <a class="btn btn-default" ng-click="logout()">
+                    Logout
+                </a>
             </li>
+
           </ul>
         </div>
       </div>
